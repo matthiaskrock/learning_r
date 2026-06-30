@@ -1,0 +1,27 @@
+{
+    "id": "62494539",
+    "path": "~/r_scripts/claude_r_learning/02-phase/chapter_9.R",
+    "project_path": null,
+    "type": "r_source",
+    "hash": "795730151",
+    "contents": "",
+    "dirty": false,
+    "created": 1780562027203.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "108,0",
+        "scrollLine": "85"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1781003802,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1781003802790,
+    "read_only": false,
+    "read_only_alternatives": []
+}

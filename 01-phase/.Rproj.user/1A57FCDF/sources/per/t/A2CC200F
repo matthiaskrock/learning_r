@@ -1,0 +1,27 @@
+{
+    "id": "A2CC200F",
+    "path": "~/r_scripts/claude_r_learning/01-phase/redo_excercise.R",
+    "project_path": "redo_excercise.R",
+    "type": "r_source",
+    "hash": "205332447",
+    "contents": "",
+    "dirty": false,
+    "created": 1780039464506.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "129,0",
+        "scrollLine": "101"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1780061490,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1780061490170,
+    "read_only": false,
+    "read_only_alternatives": []
+}

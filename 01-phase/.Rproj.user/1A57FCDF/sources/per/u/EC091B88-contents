@@ -1,0 +1,52 @@
+library(tidyverse)
+
+ggplot(diamonds, aes(x = carat)) +
+  geom_histogram(binwidth = 0.5)
+
+smaller <- diamonds |> 
+  filter(carat < 3)
+
+ggplot(smaller, aes(x = carat)) +
+  geom_histogram(binwidth = 0.01)
+
+ggplot(diamonds) + 
+  geom_histogram(aes(x=x))
+
+tibble(diamonds)
+
+
+ggplot(diamonds, aes(x = x))+
+  geom_histogram(binwidth = 0.5)+
+  coord_cartesian(xlim = c(0,50), ylim = c(0,100))
+  
+ggplot(diamonds, aes(x = y))+
+  geom_histogram(binwidth = 0.5)+
+  coord_cartesian(xlim = c(0,50),ylim = c(0,100))
+
+ggplot(diamonds, aes(x = z))+
+  geom_histogram(binwidth = 0.5)+
+  coord_cartesian(xlim = c(0,50),ylim = c(0,100))
+
+ggplot(diamonds, aes(x = price))+
+  geom_histogram(binwidth = 100)+
+  coord_cartesian(xlim = c(0,2000))
+
+diamonds |> 
+  filter(carat == 1) #|> 
+  count()
+
+  
+  nycflights13::flights |> 
+    mutate(
+      cancelled = is.na(dep_time),
+      sched_hour = sched_dep_time %/% 100,
+      sched_min = sched_dep_time %% 100,
+      sched_dep_time = sched_hour + (sched_min / 60)
+    ) |> 
+    ggplot(aes(x = sched_dep_time)) + 
+    geom_freqpoly(aes(color = cancelled), binwidth = 1/4)+
+    facet_wrap(~ cancelled, scales = "free_y")
+
+  ggplot(diamonds, aes(x = price, y = clarity )) + 
+    geom_point()  
+  
